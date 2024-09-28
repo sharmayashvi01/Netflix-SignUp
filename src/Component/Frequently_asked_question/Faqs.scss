@@ -1,0 +1,165 @@
+.faqs {
+  height: auto;
+  padding: 72px 5%;
+  background-color: black;
+  color: white;
+  .h1 {
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 1.5%;
+    font-size: 3.5em;
+  }
+  .faqbox:hover {
+    background-color: black;
+  }
+  .faqbox {
+    background-color: black;
+    width: 100%;
+    transition: all 1s ease-out;
+    font-size: 44px;
+    display: flex;
+    background-color: black;
+    padding: 10px 4px;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 0.5% 0;
+    .accordion {
+      width: 100%;
+      .item {
+        height: auto;
+        background: #212121;
+        padding: 14px;
+        margin-bottom: 10px;
+        .title {
+          height: auto;
+          font-size: 30px em;
+          color: white;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          padding: 10px;
+        }
+        .content {
+          color: white;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0s ease-in-out;
+          padding: 0 10px;
+        }
+        .content.show {
+          max-height: 9999px;
+          transition: max-height 0.3s ease-in-out;
+          width: 90%;
+        }
+      }
+    }
+  }
+  .getStarted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .p {
+      font-size: larger;
+      text-align: center;
+    }
+    .signUpBar {
+      margin-top: 10px;
+      height: 8vh;
+      width: 80%;
+      background-color: black;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-radius: 7px;
+      input {
+        width: 70%;
+        background-color: black;
+        padding-left: 10%;
+        // padding-right: 40%;
+        color: white;
+        font-size: 20px;
+        border: 1px solid white;
+        border-radius: 4px;
+      }
+      button {
+        width: 25%;
+        background: #db0001;
+        border: 0;
+        outline: 0;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+        padding: 12px;
+        border-radius: 4px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .faqs .getStarted .signUpBar {
+    input {
+      padding-left: 7%;
+      font-size: 17px;
+    }
+    button {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .faqs {
+    .h1 {
+      font-size: 35px;
+    }
+    .faqbox {
+      .accordion {
+        .item {
+          padding: 0 7px 0px 7px;
+          .title {
+            font-size: 20px;
+          }
+          .content.show {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .getStarted {
+      .p {
+        margin-bottom: 25px;
+      }
+      .signUpBar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input {
+          width: 100%;
+          margin-top: 15px;
+          padding: 10px 10px 10px 3%;
+        }
+        button {
+          margin: 1%;
+          padding: 9px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .faqs {
+    .getStarted {
+      .signUpBar {
+        button {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

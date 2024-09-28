@@ -1,0 +1,195 @@
+.Section3 {
+  background-color: black;
+  padding: 72px 20px;
+  padding-right: 40px;;
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  .center {
+    background-color: black;
+    color: black;
+    padding: 0 30px;
+    padding-left: 50px;
+    height: auto;
+    .viewbox {
+      display: flex;
+      flex-direction: row;
+      .vdo_box {
+        width: 50%;
+        background-color: black;
+        .img_box {
+          position: relative;
+          img {
+            width: 100%;
+          }
+          .strange_things {
+            padding: 3%;
+            .strange_things_box {
+              border: 1px solid white;
+              border-radius: 10px;
+              background-color: black;
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              flex-direction: row;
+              justify-content: space-between;
+              top: 70%;
+              bottom: 10%;
+              left: 15%;
+              right: 15%;
+              .icon {
+                height: 85%;
+                width: 18%;
+                margin: 1% 1% 1% 2.5%;
+                img {
+                  height: 100%;
+                }
+              }
+              .txt {
+                width: 50%;
+                color: white;
+                background-color: black;
+                padding: 4%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h1 {
+                  // font-size: 2.5rem;
+                  font-size: 25px;
+                }
+                p {
+                  // font-size: 1.5rem;
+                  font-size: 15px;
+                  color: blue;
+                }
+              }
+              .gif {
+                height: 85%;
+                width: 18%;
+                margin: 1% 2.5% 1% 1%;
+                img {
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .text_box {
+        width: 50%;
+        background-color: black;
+        color: white;
+        padding-left: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1 {
+          margin-top: 20px;
+          font-size: 45 px;
+        }
+        p {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 1000px) {
+  .Section3 {
+    padding: 20px 0;
+    .center {
+      .viewbox {
+        .vdo_box {
+          .img_box {
+            .strange_things {
+              .strange_things_box {
+                .txt {
+                  h1 {
+                    font-size: 1em;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .Section3 {
+    .center {
+      .viewbox {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .vdo_box {
+          width: 100%;
+          .img_box {
+            .strange_things {
+              .strange_things_box {
+                .txt {
+                  h1 {
+                    font-size: 1em;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .text_box {
+          width: 100%;
+          text-align: center;
+          h1 {            
+            font-size: 2em;
+          }
+          p {
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .Section3 {
+    .center {
+      padding: 2%;
+      .viewbox {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        .vdo_box {
+          width: 100%;
+          .img_box {
+            .strange_things {
+              .strange_things_box {
+                .txt {
+                  h1 {
+                    font-size: 1em;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .text_box {
+          width: 100%;
+          text-align: center;
+          h1 {
+            
+            font-size: 1.5em;
+          }
+          p {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}

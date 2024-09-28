@@ -1,0 +1,173 @@
+.section2 {
+  background-color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 0;
+  .center {
+    background-color: black;
+    height: 80%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    .text_box {
+      width: 50%;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding-right: 6px;
+      padding-left: 50px;
+      .watch_on {
+        margin: 0 16px 0 0;
+      }
+    }
+    .vdo_box {
+      background-color: black;
+      width: 50%;
+      position: relative;
+      .image {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      }
+      .vdo {
+        background-color: black;
+        z-index: 1;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        max-width: 73%;
+        max-height: 55%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50.5%, -53%);
+        .video {
+          position: relative;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 950px) {
+  .section2 {
+    background-color: black;
+    padding: 12px 0px;
+    padding-left: 2%;
+    .center {
+      height: 90%;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .text_box {
+        align-items: center;
+        margin: 0 0;
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 90%;
+        .enjoy_your_tv {
+          font-size: larger;
+          margin-bottom: 20px;
+        }
+        .watch_on {
+          margin: 0 0 0 0;
+          font-size: 25px;
+        }
+      }
+      .vdo_box {
+        width: 95%;
+        .vdo {
+          .image {
+            position: relative;
+          }
+          .video {
+            position: absolute;
+            object-fit: cover;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .section2 {
+    .center {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .section2 {
+    background-color: black;
+    padding: 15px 0px;
+    .center {
+      height: 90%;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .text_box {
+        align-items: center;
+        margin: 0 0;
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 90%;
+        .enjoy_your_tv {
+          // background-color: blue;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        .watch_on {
+          margin: 0 0 0 0;
+          font-size: larger;
+        }
+      }
+      .vdo_box {
+        width: 90%;
+        background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .image {
+          height: 100%;
+          width: 100%;
+          position: relative;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .section2 {
+    .center {
+      .text_box {
+        .enjoy_your_tv {
+          font-size: 15px;
+        }
+        .watch_on {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

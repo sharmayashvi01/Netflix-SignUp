@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+  footer {
+    color: white;
+    max-width: 90vw;
+    margin: auto;
+    padding: 14px;
+    .question {
+      padding: 24px 0;
+    }
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      row-gap: 13px;
+      column-gap: 13px;
+      @media screen and (max-width: 700px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      a {
+        font-size: 14px;
+        color: white;
+        text-decoration-line: none;
+      }
+    }
+  }
+  .selectBox {
+    padding-top: 20px;
+  }
+}

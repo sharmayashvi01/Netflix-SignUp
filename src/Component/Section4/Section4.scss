@@ -1,0 +1,85 @@
+.Section4 {
+  padding: 72px 50px;
+  //   margin: 0 30px;
+  font-size: 16px;
+  position: relative;
+  background-color: black;
+  .center {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    .text_box {
+      padding: 2%;
+      width: 50%;
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+    }
+    .vdo_box {
+      width: 50%;
+      background-color: black;
+      .image {
+        z-index: 1;
+        position: relative;
+        display: flex;
+        padding-top: 3%;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+        .vdo {
+          z-index: -1;
+          position: absolute;
+          background-color: black;
+          top: 10%;
+          left: 19%;
+          height: 100%;
+          width: 95%;
+          max-height: 45.5%;
+          max-width: 61%;
+          video {
+            height: 100%;
+            width: 100%;
+            top: 10%;
+            left: 19%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Section4 {
+    padding: 22px 0;
+    .center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .text_box {
+        text-align: center;
+        width: 80%;
+        display: flex;
+      }
+      .vdo_box {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Section4 {
+    .center {
+      // display:flex;
+      // align-items: center;
+      .text_box {
+        text-align: center;
+        font-size: 0.8em;
+      }
+    }
+  }
+}
